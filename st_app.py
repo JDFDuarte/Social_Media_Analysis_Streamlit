@@ -221,10 +221,7 @@ if var_select == "Churn Analysis":
     st.title("")
     st.title("")
     st.subheader("Churn analysis based on interaction with the key hashtags over time")
-    st.title("")
-    st.write("Some description")
 
-    st.title("")
     with open(path_churn_html,'r') as f: 
         html_data = f.read()
 
