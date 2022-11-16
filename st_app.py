@@ -3,15 +3,9 @@ import os
 import streamlit as st
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import plotly.express as px
-import plotly.graph_objects as go
 from urllib.request import urlopen
 from PIL import Image
-from copy import deepcopy
-from st_clickable_images import clickable_images
 
-import pydeck as pdk
 
 # ________________________________________________________________________________________
 path = os.path.dirname(__file__)
