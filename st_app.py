@@ -278,7 +278,7 @@ if var_select == "Fanbase Segmentation":
 
 
 
-    df_map = pd.read_csv(r"..\Streamlit\df_coords.csv")
+    df_map = pd.read_csv("/df_coords.csv")
     df_map = df_map.dropna()
     st.map(df_map, zoom = 1)
 
