@@ -117,7 +117,7 @@ st.title("Data Science Bootcamp - Capstone Project")
 st.header("Group: SiT Autonomous")
 st.subheader("Sport Team Fan Base Social Media Analytics")
 
-st.info('Description', icon="⚽")
+st.info('    Description', icon="⚽")
 st.write("Professional sports organizations these days aren't only about top game performance, but also about their marketing success. There are examples of underdogs who are healthy from a business perspective because of their active fan base (e.g. West Ham United)."
 " We would like to better understand how teams could utilize their social media presence to become more successful in growing and engaging their supporters.")
 
