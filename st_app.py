@@ -135,7 +135,7 @@ st.write("""
 st.header("")
 st.header("Social Media Analytics")
 play_vars = ["Please select one of the options below: ", "Tweet Content and Analysis", "Churn Analysis", "Matches and Sentiment Analysis", "Fanbase Segmentation", "Manchester United"]
-var_select = st.selectbox("Please select: ", play_vars, label_visibility="collapsed")
+var_select = st.selectbox("Please select: ", play_vars)
 
 # _________________________Topics__________________________________________________________________________________________
 
