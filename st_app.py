@@ -124,9 +124,9 @@ st.write("Professional sports organizations these days aren't only about top gam
 st.header("")
 st.info("Goals")
 st.write("""
+\n Assess social media presence of a football club;
 \n Segment followers by their interests and social activity;
-\n Predict whether follower could be a core fan;
-\n Analyse which team/player's posts led to positive engagement, growth of core fanbase;
+\n Grow & Engage their fans.
 """)
 
 # _________Titles___________________________________________________________
