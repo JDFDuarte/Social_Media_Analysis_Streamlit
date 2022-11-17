@@ -92,6 +92,7 @@ url_naemi = "https://www.linkedin.com/in/naemi-graf-0b434a13a/"
 
 
 st.sidebar.subheader("Date: 18.11.2022")
+st.sidebar.image(sit_logo, width=250)
 # image = Image.open(output_logo)
 # st.sidebar.image(image, width=250)
 # st.sidebar.header("Capstone Project")
@@ -113,7 +114,7 @@ with st.sidebar:
 
 # _________TOP_____________________________________________________________
 
-st.image(sit_logo)
+
 st.title("Data Science Bootcamp - Capstone Project")
 st.header("Group: SiT Autonomous")
 st.subheader("Sport Team Fan Base Social Media Analytics")
