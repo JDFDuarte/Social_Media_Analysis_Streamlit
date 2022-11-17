@@ -113,7 +113,7 @@ with st.sidebar:
 
 # _________TOP_____________________________________________________________
 
-st.image(sit_logo, width=100)
+st.image(sit_logo, width=500)
 st.title("Data Science Bootcamp - Capstone Project")
 st.header("Group: SiT Autonomous")
 st.subheader("Sport Team Fan Base Social Media Analytics")
