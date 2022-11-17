@@ -10,7 +10,7 @@ from PIL import Image
 # ________________________________________________________________________________________
 path = os.path.dirname(__file__)
 output_map = path + '/df_coords.csv'
-output_logo = path + "/sit_logo_nobg.png"
+sit_logo = path + "/sit_logo_nobg.png"
 path_image_html = path + "/topics.html"
 twitter_logo = path +"/twitter_logo"
 
@@ -113,6 +113,7 @@ with st.sidebar:
 
 # _________TOP_____________________________________________________________
 
+st.image(sit_logo)
 st.title("Data Science Bootcamp - Capstone Project")
 st.header("Group: SiT Autonomous")
 st.subheader("Sport Team Fan Base Social Media Analytics")
