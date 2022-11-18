@@ -183,7 +183,6 @@ if var_select == "Tweet Content and Analysis":
     with open(path_manutd_html,'r') as f: 
         html_data = f.read()
 
-    ## Show in webpage
     st.subheader("Manchester United - official Twitter account")
     st.components.v1.html(html_data, height = 500, scrolling = True)
 
@@ -194,8 +193,6 @@ if var_select == "Tweet Content and Analysis":
     with open(path_barchar_html,'r') as f: 
         html_data = f.read()
 
-    ## Show in webpage
-    st.write("Description")
     st.components.v1.html(html_data, height = 750, scrolling = True)
 
 
@@ -208,7 +205,6 @@ if var_select == "Tweet Content and Analysis":
     with open(path_hierarchy_html,'r') as f: 
         html_data = f.read()
 
-    ## Show in webpage
     st.components.v1.html(html_data, height = 1100, width = 1000)
 
 # _____________________________Top_10______________________________________________________________________________________
@@ -265,7 +261,6 @@ if var_select == "Matches and Sentiment Analysis":
         html_data = f.read()
 
     ## Show in webpage
-
     st.components.v1.html(html_data, height = 600, scrolling = True)
     
 # ___________________________________________________________________________________________________________________
@@ -298,8 +293,6 @@ if var_select == "Fanbase Segmentation":
     st.title("")
     st.subheader("Fanbase geographical distribution")
     st.write("Location available in 90034 users' profiles (out of 138k unique users).")
-
-
 
     df_map = pd.read_csv("df_coords.csv")
     df_map = df_map.dropna()
