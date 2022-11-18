@@ -10,7 +10,7 @@ from PIL import Image
 # ________________________________________________________________________________________
 path = os.path.dirname(__file__)
 output_map = path + '/df_coords.csv'
-sit_logo = path + "/sit_logo_nobg.png"
+sit_logo = Image.open(path + "/sit_logo_nobg.png")
 path_image_html = path + "/topics.html"
 twitter_logo = path +"/twitter_logo"
 
@@ -53,7 +53,7 @@ def load_data(path):
 st.markdown("""
         <style>
                .css-18e3th9 {
-                    padding-top: 0.5rem;
+                    padding-top: 2rem;
                     padding-bottom: 0rem;
                     padding-left: 5rem;
                     padding-right: 5rem;
@@ -80,7 +80,7 @@ st.sidebar.markdown(
             margin-right: auto;
             width: 100%;
         }
-        
+                
     </style>
     """, unsafe_allow_html=True
 )
@@ -90,29 +90,50 @@ url_joana = "https://www.linkedin.com/in/joanaduartesantos/"
 url_ella = "https://www.linkedin.com/in/mihaela-cucui-642789b5/"
 url_naemi = "https://www.linkedin.com/in/naemi-graf-0b434a13a/"
 
+st.sidebar.markdown("""
+<style>
+.big-font {
+    font-size:25px !important;
+}
+</style>
+""", unsafe_allow_html=True)
 
-st.sidebar.subheader("Date: 18.11.2022")
-st.sidebar.image(sit_logo, width=250)
+st.sidebar.markdown('<p class="big-font">Date: 18.11.2022</p>', unsafe_allow_html=True)
+
+st.sidebar.image(sit_logo)
 # image = Image.open(output_logo)
 # st.sidebar.image(image, width=250)
 # st.sidebar.header("Capstone Project")
 
+st.sidebar.header("")
+st.sidebar.header("")
 st.sidebar.subheader("Data Science Consulting Team:")
 
 with st.sidebar:
-    st.image(joana_lkd, width=175)
+    st.image(joana_lkd, width=150)
     st.caption(url_joana)
 
 with st.sidebar:
-    st.image(ella_lkd, width=200)
+    st.image(ella_lkd, width=175)
     st.sidebar.caption(url_ella)
 
 with st.sidebar:
-    st.image(naemi_lkd, width=300)
+    st.image(naemi_lkd, width=250)
     st.sidebar.caption(url_naemi)
 
 
 # _________TOP_____________________________________________________________
+
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    st.write("")
+
+with col2:
+    st.write("")
+    
+with col3:
+    st.image(sit_logo, width=300)
 
 
 st.title("Data Science Bootcamp - Capstone Project")
